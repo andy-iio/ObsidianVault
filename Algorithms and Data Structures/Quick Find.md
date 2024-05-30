@@ -1,4 +1,4 @@
-Quick find is very fast for find, but slow for union operations (proportional to N items). eg, the worst case -> for a problem that requires M unions with N objects, the solution will require M * N instructions. lets edit
+Quick find is very fast for find, but slow for union operations (proportional to N items). eg, the worst case -> for a problem that requires M unions with N objects, the solution will require M * N instructions. 
 ### Quick Find
 - Each object starts off in its own set
 - As connections are made, change the set of one object to that of the other (does not matter which)

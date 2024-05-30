@@ -1,13 +1,22 @@
+For an actual good sample code, see [[Linked List Code]]
 For list processing, see [[List Processing]] (traversal, reversal)
-A set of *nodes* each with a pointer to another node.
+
+### Linked List Basics
+A linked list is a set of *nodes* each with a pointer to another node.
 A node is a block of related items, containing the data and a link to the next node.
+The first node is called the head, the last node is called the tail. 
+
+There are two types, singly linked and doubly linked lists. Singly Linked contains nodes that only point to the next node. Doubly has nodes that point towards both the previous and next node.
+![[Pasted image 20240530100727.png]]
+
+Sample Node Code 
 ```cpp
 struct node {
-	struct node* pNext; // pNext points to a node  
-	struct item Data;
+	struct node* pNext; //points to next node 
+	struct node* pPrev // points to the previous node (for doubly linked lists)
+	int Data; //holds the data, in this case an integer value
 };
 ```
-![[Pasted image 20240528143345.png]]
 ### Linked lists vs Arrays:
 
 | Linked List                                       | Array                                            |
@@ -72,6 +81,7 @@ p = (Node*)malloc(sizeof(Node));
 
 Making a list of four nodes:
 ![[Pasted image 20240528145300.png]]
+
 ``` cpp title:fourNodes.cpp
 Node *pNode, *pHead;  
 pNode = (link)malloc(sizeof(Node)); // Make Node 1  
@@ -89,4 +99,5 @@ pNode = pNode->pNext; // Move pNode so it points to Node 4
 pNode->Data.height = 40; // Populate Node 4  
 pNode->pNext = NULL; // End of the list
 ```
+
 
