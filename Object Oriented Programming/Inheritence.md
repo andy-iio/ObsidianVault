@@ -1,0 +1,1 @@
+Inheritence is the mechanism of basing a class(Sub class) on another class (super class) to create a new class from the existing one. 
