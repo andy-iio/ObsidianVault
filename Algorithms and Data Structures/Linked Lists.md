@@ -1,6 +1,7 @@
 For an actual good sample code, see [[Linked List Code]]
 For list processing, see [[List Processing]] (traversal, reversal)
-
+[[#Cyclic Linked Lists]]
+[[#Doubly Linked Lists]]
 ### Linked List Basics
 A linked list is a set of *nodes* each with a pointer to another node.
 A node is a block of related items, containing the data and a link to the next node.
@@ -51,6 +52,22 @@ List ends if:
 	- There is a NULL link or dummy node at the end
 	- There is a link back to the first node
 
+### Doubly Linked Lists (O(1))
+A singly linked list can only be traversed from head to tail  
+- Going backwards is slow 
+- Have to traverse list in forward direction n times
+So, a doubly linked list can be used in situations where you need to traverse the list in both directions. 
+However it comes with the cost of increased complexity of insertion and deletion operations
+
+**Deletion of a mid-list node on a doubly linked list:**
+Locate node at mid-list and create pointer to it with x. The node you want to delete already has the correct previous and next node you need! So you put the change the node before x next to x.next and the node after's previous to x.previous 
+![[Pasted image 20240604151209.png]]
+![[Pasted image 20240604151440.png]]
+
+**Delete a node at the beginning of the list**:
+Locate the node at the beginning of the list and create a pointer to it with x.
+![[Pasted image 20240604151615.png]]
+![[Pasted image 20240604151622.png]]
 
 ### Linked List Sample Code:
 ```cpp

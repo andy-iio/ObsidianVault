@@ -27,7 +27,7 @@ void pushToStart(struct Node** head_ref, int new_data) {
     (*head_ref) = new_node;
 }
 
-
+//add to tail
 void appendToEnd(struct Node** head_ref, int new_data) {
     struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
     struct Node* last = *head_ref;
@@ -36,6 +36,16 @@ void appendToEnd(struct Node** head_ref, int new_data) {
     while (last->next != NULL)
         last = last->next;
     last->next = new_node;
+}
+
+//insert node after another specific node
+void insertAfter(struct Node * prev_node, int new_data) { 
+	if (prev_node == NULL) { 
+		printf("the given previous node cannot be NULL"); return; 
+	} 
+		struct Node * new_node = (struct Node * ) malloc(sizeof(struct Node));
+		new_node->data = new_data; new_node->next = prev_node->next; 
+		prev_node->next = new_node; 
 }
 
 int main() {
@@ -58,6 +68,8 @@ int main() {
 
     print_list(head);
     push(&head, 11);
+    append(&head, 7);
+    insertAfter(second, 9);
     print_list(head);
 }
 ```
