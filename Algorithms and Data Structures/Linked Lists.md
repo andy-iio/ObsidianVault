@@ -8,7 +8,6 @@ A node is a block of related items, containing the data and a link to the next n
 The first node is called the head, the last node is called the tail. 
 
 There are two types, singly linked and doubly linked lists. Singly Linked contains nodes that only point to the next node. Doubly has nodes that point towards both the previous and next node.
-![[Pasted image 20240530100727.png]]
 
 Sample Node Code 
 ```cpp
