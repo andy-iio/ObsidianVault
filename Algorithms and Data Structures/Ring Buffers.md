@@ -16,8 +16,6 @@ Now assume the buffer is full:
 A property of the circular buffer is that when it is full and a subsequent write is performed, then it starts overwriting the oldest data. In the current example, two more elements — A & B — are added and they _overwrite_ the 3 & 4
 ![[Pasted image 20240604144531.png]]
 Alternatively, the routines that manage the buffer could prevent overwriting the data and return an error or raise an exception. Whether or not data is overwritten is up to the semantics of the buffer routines or the application using the circular buffer.
-
-
 ### Uses
 The useful property of a circular buffer is that it does not need to have its elements shuffled around when one is consumed. (If a non-circular buffer were used then it would be necessary to shift all elements when one is consumed.) In other words, the circular buffer is well-suited as a FIFO (_first in, first out_) buffer while a standard, non-circular buffer is well suited as a LIFO (_last in, first out_) buffer.
 
