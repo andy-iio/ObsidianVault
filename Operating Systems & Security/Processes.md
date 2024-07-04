@@ -3,6 +3,8 @@
 ==A process is a program/ application under execution.==
 It is the set of CPU state, memory (including heap and stack), I/O, and program (instructions).
 It is a dynamic entity working towards some goal.
+A ”container” holding a number of resources (allocated to the process)
+An entity that executes instructions according to the loaded program.
 
 Information associated with each process:  
 • [[#**Process States**||Process state]] 
