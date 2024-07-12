@@ -1,0 +1,1 @@
+Abstraction is about hiding unnecessary implementation details and exposing the essential parts
