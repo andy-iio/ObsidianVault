@@ -207,9 +207,111 @@ post-> 5-4-6-13-24-71-74-62-12
 
 
 ### Binary Search Trees
+helpful video: 
+https://youtube.com/watch?v=Gt2yBZAhsGM
+
 ![[Pasted image 20240702152926.png]]
 #### Binary Search Tree Traversal
 - keys in the left subtree are smaller, and keys in the right subtree are larger
 - so, if we do an inorder traversal of a BST, we will process the keys in sorted order (because inorder traversal is left-parent-right recursivly)
 
-LAST SLIDE = #40
+##### Binary Search Tree Code - Inorder Traversal:
+Here is code to print a BST in sorted order, using inorder traversal.  
+Note – The existence of a char array szKey is assumed in the Item structure
+```cpp
+//Remember: Inorder traversal pattern is left (child) then center (parent) then right (child), recursively
+void BSTPrint(link h){
+  if (h == NULL) return;  // reached leaf
+  BSTPrint(h->pLeft);  // left
+  printf("Key: %s\n", h->Item.szKey);  // center
+  BSTPrint(h->pRight);  // right
+  return;
+}
+```
+
+##### Binary Search Tree Code - Tree Node:
+```cpp
+#include <stdlib.h>
+#include "Item.h"  // defines 'Item' structure
+
+typedef struct BSTNode* link; //pointer to BSTNode
+struct BSTNode { Item item; link pLeft, pRight; }; //defines the structure
+static Item NullItem = {}; //children of leaf nodes, bc leaf nodes have no children
+static link head;  // 'head' points to root (private var)
+
+// NEW() function creates a new tree node using malloc()
+link NEW(Item item, link left, link right) {
+  link pNew = (link)malloc(sizeof(*pNew));
+  pNew->item = item;
+  pNew->pLeft= left;
+  pNew->pRight = right;
+  return(pNew);
+}
+```
+
+##### Binary Search Tree Code - Search:
+```cpp
+// Create an empty Binary Search Tree
+void BSTInit(void) {
+  head = NEW(NullItem, NULL, NULL); // start with empty
+}
+
+// Search for a key in the BST (using szKey in struct Item)
+Item BSTSearch(link h, char *szSearchKey) {
+  int rc;
+  if (h == NULL) return(NullItem); // Got to end & not found
+  rc = strcmp(szSearchKey,h->msg.buff);
+  if (rc == 0) return(h->msg);// Found it
+  if (rc < 0) return(BSTSearch(h->pLeft,szSearchKey);
+  else return(BSTSearch(h->pRight,szSearchKey);
+}
+
+Item Search(char *szKey) { return(BSTSearch(head,szKey); }
+```
+Search() simply calls BSTSearch() without  need for 'head' (a private variable) so that it can be called from main().
+
+strcmp()
+-If rc = 0 then the two strings are equal, found the Node with the matching key
+-If rc < 0 then the first string szSearchKey is less than h->msg.buff (so search LEFT subtree)
+-If rc > 0 then the first string szSearchKey is greater than h->msg.buff (so search RIGHT subtree)
+
+Note: The Nodes 'Item' structure may contain more information than is in the key itself. For example we could be searching medical records (i.e. all info in the 'Item' member of a Node) by the search key 'Name' (a member of Item). So searching for a key, and finding it, gives us more/other useful information.
+##### Binary Search Tree Code - Insert:
+```cpp
+// Insert a key in the BST. Uses szKey as before
+
+link BSTInsert(link h, Item item) {
+  int rc;
+  if (h == NULL) return(NEW(item,NULL,NULL));  // insert pt
+  rc = strcmp(item.buff, h->msg.buff);   // Go left or right?
+  if (rc < 0) {
+    h->pLeft = BSTInsert(h->pLeft, item);
+  } else {
+    h->pRight = BSTInsert(h->pRight, item);
+  }
+
+  return(h);    // pointer to (new/existing) child
+}    // passed up to parent, assigned in the if block
+
+void Insert(Item item)
+{  
+  head = BSTInsert(head, item);
+}
+```
+Insert() calls BSTInsert() without need for head so it can be called from main() –> returns a pointer to the inserted node (so that parent nodes pLeft or pRight pointers can point to it)  
+
+BSTInsert goes left or right depending on the result of the strcmp()
+
+Once it reaches the end of the tree (i.e. leaf node where h\==pNull) then it inserts the new Item
+
+##### BST Search Example
+Here is a successful search for the key 'H':
+We go right at the root (since H is larger than A), left at S, and so on
+![[Pasted image 20240709143419.png]]
+
+Here is an unsuccessful search for M:
+![[Pasted image 20240709143511.png]]
+If it were present it would be to the left of N, but instead we find a null link.
+
+Here we insert M in its proper spot by allocating a new node for it, and replacing the left link of N with a pointer to the M node:
+![[Pasted image 20240709143549.png]]
