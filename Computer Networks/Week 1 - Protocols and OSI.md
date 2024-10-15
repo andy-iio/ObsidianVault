@@ -70,7 +70,7 @@ Local area networks are usually contained in a small space such as an office or 
 
 A switch receives incoming data from one of it's ports and redirects it to another port or multiple ports. It will send the data to its intended destination.
 
-A network interface card (NIC) is a network port used to attach a device to a network. Most PC's have multiple NIC's now.
+A network interface card ([[Week 3 - OSI Layer 1 & 2#NIC's|NIC]]) is a network port used to attach a device to a network. Most PC's have multiple [[Week 3 - OSI Layer 1 & 2#NIC's|NIC]]'s now.
 
 Star topology is when all devices connect to one central device (usually a switch)
 ### WLAN - Wireless LAN

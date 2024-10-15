@@ -100,9 +100,9 @@ The physical layer is the simplest layer and is responsible for sending bits via
 ### Layer 2: Data Link Layer
 The data link layer provides methods for exchanging data frames between devices over a common media. Control information is put into a header and at the end of the packet in a trailer. The entire link layer is called a frame. 
 
-Layer 1 & 2 are responsible for interfacing with physical hardware on the local network. Protocols at these layers are programmed into firmware of a computer’s NIC and other hardware. The hardware used on a network determines the link layer protocol used. Ethernet and Wi-Fi are examples.
+Layer 1 & 2 are responsible for interfacing with physical hardware on the local network. Protocols at these layers are programmed into firmware of a computer’s [[Week 3 - OSI Layer 1 & 2#NIC's|NIC]] and other hardware. The hardware used on a network determines the link layer protocol used. Ethernet and Wi-Fi are examples.
 
-MAC (Media Access Control) address is the hardware address of the source and destination NIC's (*Remember: A network interface card (NIC) is a network port used to attach a device to a network.*)
+MAC (Media Access Control) address is the hardware address of the source and destination [[Week 3 - OSI Layer 1 & 2#NIC's|NIC]]'s (*Remember: A network interface card (NIC) is a network port used to attach a device to a network.*)
 MAC is also called a physical address, hardware address, or data link layer address.
 They are embedded on every network adapter and are considered short-range addresses that can only find nodes on the local network. 
 ### Layer 3: Network Layer
