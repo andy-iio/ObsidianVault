@@ -1,4 +1,7 @@
-### Introduction to Information Management  
+# Helpful Videos/Resources:
+https://www.youtube.com/watch?v=6Iu45VZGQDk&list=PLBlnK6fEyqRi_CUQ-FXxgzKQ1dwr_ZJWZ
+### Introduction to Information Management 
+Quick Definitions:
 • Data: stored representations of meaningful objects and events  
 • Structured: numbers, text, dates  (RDBMS)
 • Unstructured: images, video  (Big data technology needed)
@@ -48,7 +51,7 @@ data, etc.
 		DB2
 
 ##### When database is managed by a Database Management System  
-	• Single copy of the data  
+-  Single copy of the data  
 	• Integrity  
 	• All programs access the same copy of the data  
 		• No duplication of data  
