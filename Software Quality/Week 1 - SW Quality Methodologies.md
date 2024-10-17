@@ -7,13 +7,13 @@
 - **Validation**: The process of evaluating software to ensure it meets its intended use.
 ## Software Quality
 Different Views:
-- ***Consumer's View***: Focuses on quality characteristics related to usage and reliability, emphasizing that the software should be 'fit for use'.
-- ***Producer's View***: Concentrates on whether the software meets its specified requirements, ensuring that development goals are achieved.
-- ***Product View***: Pertains to characteristics that influence sales and branding, highlighting the importance of market perception.
+- **Consumer's View**: Focuses on quality characteristics related to usage and reliability, emphasizing that the software should be 'fit for use'.
+- **Producer's View**: Concentrates on whether the software meets its specified requirements, ensuring that development goals are achieved.
+- **Product View**: Pertains to characteristics that influence sales and branding, highlighting the importance of market perception.
 ## Quality Factors & Criteria
-- ***Quality Factors***: Behavioral characteristics of a system, such as correctness, reliability, efficiency, and testability.
-- ***Quality Criteria*** Attributes related to software development, for example, modularity as an attribute of software architecture.
-- ***Quality Models***: Frameworks like ISO 9126 (now ISO 25010) and CMM that provide standards for assessing software quality.
+- **Quality Factors**: Behavioral characteristics of a system, such as correctness, reliability, efficiency, and testability.
+- **Quality Criteria** Attributes related to software development, for example, modularity as an attribute of software architecture.
+- **Quality Models**: Frameworks like ISO 9126 (now ISO 25010) and CMM that provide standards for assessing software quality.
 
 ## Quality Assurance
 How do you prove the software is fit for use? Through QA!
@@ -26,7 +26,7 @@ How do you prove the software is fit for use? Through QA!
 **Auditing:** the inspection/assessment activity that verifies compliance with plans, policies, and procedures
 
 ## Software Testing
-**Software Testing:** an activity or strategy to identify and manage risk within software. Used to verify that the business requirements were met. ***The limitation of testing alone is that by the time testing can be done it's too late to build quality into the product!!!!***
+**Software Testing:** an activity or strategy to identify and manage risk within software. Used to verify that the business requirements were met. **The limitation of testing alone is that by the time testing can be done it's too late to build quality into the product!!!!**
 Tests are only as good as the test cases:
 - Test cases can be inspected to ensure that all requirements are tested across all possible combinations of inputs and system states
 - Still does not guarantee all defects will be discovered
@@ -58,7 +58,7 @@ Its good practice though to combine verification with validation in modern testi
 - Can be introduced at any point in the SDLC, no matter the model
 - The severity of the defect depends on the impact it has on a user
 
-***Fault/Defect/Bug -> could lead to error -> could lead to failure***
+**Fault/Defect/Bug -> could lead to error -> could lead to failure**
 ## Software Quality Methodologies:
 Any strategy taken to ensure software operates as expected (could be simple or well established practice) (SCRUM and waterfall are methodologies that have their own models and procedures) 
 methodologies vs models: methodologies consist of model procedures, e.g. scrum may use relational model. What you use in a methodology is a model. There can be a bunch of models you use in 1 methodology.

@@ -46,7 +46,7 @@
 |Project Size|2|8|16|
 |Experience with Technology|3|6|18|
 |Project Structure|1|4|4|
-|****Total****|||****38****|
+|**Total**|||**38**|
 
 # Risk Mitigation Strategies
 

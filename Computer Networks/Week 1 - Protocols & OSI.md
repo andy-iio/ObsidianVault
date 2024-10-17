@@ -1,7 +1,7 @@
 ### How Networks are Used
 **Network Services:** The resources a networks makes available to its users (Includes applications and the data provided by these applications)
 ##### Types of applications found on most networks:
-- **Client Server** (see [[Week 1 - Protocols and OSI#Clients and Servers|Clients & Servers]] )
+- **Client Server** (see [[Week 1 - Protocols & OSI#Clients and Servers|Clients & Servers]] )
 	- Involves 2 computers: client requests data/service, server provides the data/service
 	- examples include: web service, email, FTP, remote desktop
 	![[Pasted image 20240910113911.png]]
@@ -83,7 +83,7 @@ Wide area networks usually cover a large geographic area, and are operated by te
 A metropolitan area network is larger than a LAN but smaller than a WAN, for example, a city. It is operated by a single entity such as a large organization.
 
 ### PAN - Personal Area Network 
-A personal area network is the smallest network, and is a network of personal devices. For example, USB connections between personal devices. Three common wireless technologies used to connect PAN devices are Bluetooth, Infrared (IR), and [[Week 1 - Protocols and OSI#NFC - Near Field Communication|Near-Field Communication (NFC)]].
+A personal area network is the smallest network, and is a network of personal devices. For example, USB connections between personal devices. Three common wireless technologies used to connect PAN devices are Bluetooth, Infrared (IR), and [[Week 1 - Protocols & OSI#NFC - Near Field Communication|Near-Field Communication (NFC)]].
 ### WPAN - Wireless Personal Area Network
 PAN encompasses both wired and wireless technologies, while WPAN specifically focuses on wireless technologies such as Bluetooth.
 

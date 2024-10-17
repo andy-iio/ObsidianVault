@@ -95,10 +95,10 @@ A set of linearly independent paths of a CFG is:
 
 ### Types of Software Testing
 
-- ***Unit Testing***: Focuses on testing individual components or modules of a software system, ensuring that each part functions correctly in isolation. Unit tests are fully automated, easy to develop using a framework (MSTest), execute quicky, and provide good test coverage. 
-- ***Integration Testing***: Tests the interaction between integrated modules to ensure they work together as expected.
-- ***System Testing***: Evaluates the complete and integrated software system to verify that it meets specified requirements and functions correctly in various scenarios.
-- ***Acceptance Testing***: Conducted to determine if the system meets the acceptance criteria set by the customer, ensuring it fulfills user and business requirements.
+- **Unit Testing**: Focuses on testing individual components or modules of a software system, ensuring that each part functions correctly in isolation. Unit tests are fully automated, easy to develop using a framework (MSTest), execute quicky, and provide good test coverage. 
+- **Integration Testing**: Tests the interaction between integrated modules to ensure they work together as expected.
+- **System Testing**: Evaluates the complete and integrated software system to verify that it meets specified requirements and functions correctly in various scenarios.
+- **Acceptance Testing**: Conducted to determine if the system meets the acceptance criteria set by the customer, ensuring it fulfills user and business requirements.
 - Each testing level serves a distinct purpose and is crucial for delivering high-quality software.
 
 ### Importance of System Testing
@@ -120,8 +120,8 @@ A set of linearly independent paths of a CFG is:
 
 ### Types of Acceptance Testing
 
-- ****User Acceptance Testing (UAT)****: Conducted by end-users to ensure the system meets their requirements and expectations.
-- ****Business Acceptance Testing (BAT)****: Focuses on verifying that the software meets business requirements and can handle business scenarios effectively.
+- **User Acceptance Testing (UAT)**: Conducted by end-users to ensure the system meets their requirements and expectations.
+- **Business Acceptance Testing (BAT)**: Focuses on verifying that the software meets business requirements and can handle business scenarios effectively.
 - Acceptance testing is formal and aims to validate that the system satisfies its acceptance criteria before deployment.
 - Test cases for acceptance testing are designed to mimic real-world business processes, ensuring practical applicability.
 - Both UAT and BAT are critical for confirming that the software is ready for release and meets the needs of stakeholders.

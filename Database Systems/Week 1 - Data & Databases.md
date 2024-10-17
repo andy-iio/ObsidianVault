@@ -1,7 +1,6 @@
 # Helpful Videos/Resources:
 https://www.youtube.com/watch?v=6Iu45VZGQDk&list=PLBlnK6fEyqRi_CUQ-FXxgzKQ1dwr_ZJWZ
-### Introduction to Information Management 
-Quick Definitions:
+# Definitions:
 • Data: stored representations of meaningful objects and events  
 • Structured: numbers, text, dates  (RDBMS)
 • Unstructured: images, video  (Big data technology needed)
